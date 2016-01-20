@@ -58,15 +58,6 @@
         android:layout_height="match_parent"
         android:gravity="center_horizontal">
 
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:progressBarStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:indeterminate="true"
-            android:visibility="gone" />
-
         <ScrollView
             android:id="@+id/results_container"
             android:layout_width="match_parent"
@@ -91,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="400dp"
             android:layout_gravity="bottom"
-            android:text="Previous" />
+            android:text="previous" />
 
         <Button
             android:id="@+id/n_button"
@@ -100,7 +91,7 @@
             android:layout_marginTop="400dp"
             android:layout_gravity="bottom"
             android:layout_marginLeft="265dp"
-            android:text="Next"
+            android:text="next"
             android:onClick="nextbutton"/>
 
 

@@ -13,7 +13,7 @@ import retrofit2.http.Query;
  */
 public interface EchonestAPI {
 
-    String api_key = "MY_TOKEN";
+    String api_key = "VE57V7TZY1T8KGHNN";
     String BASE_URL = "http://developer.echonest.com/api/v4/";
 
     @GET("artist/search")
