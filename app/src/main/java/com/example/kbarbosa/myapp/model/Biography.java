@@ -6,6 +6,7 @@ package com.example.kbarbosa.myapp.model;
 public class Biography {
 
     private String text;
+    private boolean truncated;
 
     public String getText() {
         return text;
@@ -13,5 +14,13 @@ public class Biography {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public Boolean getTruncated() {
+        return truncated;
+    }
+
+    public void setTruncated(Boolean truncated) {
+        this.truncated = truncated;
     }
 }

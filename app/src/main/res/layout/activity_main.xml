@@ -6,11 +6,21 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.kbarbosa.myapp.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/MyToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:subtitle="Search for your favourite artist"
+        app:subtitleTextAppearance="@style/ToolbarTextAppearance.Subtitle"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Music App Database"
+        app:titleTextAppearance="@style/ToolbarTextAppearance.Title"
+        app:titleTextColor="#FFFFFF" />
 
 
     <EditText
@@ -26,31 +36,37 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/imageButton"
+            android:id="@+id/image_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_gravity="end"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:text="images" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#455A64"
+            android:text="images"
+            android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/songButton"
+            android:id="@+id/song_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_gravity="end"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:text="songs" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#455A64"
+            android:text="songs"
+            android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/queryButton"
+            android:id="@+id/query_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_gravity="end"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:text="@string/buttonsearch" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#455A64"
+            android:text="@string/buttonsearch"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 
     <RelativeLayout
@@ -61,39 +77,53 @@
         <ScrollView
             android:id="@+id/results_container"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp">
 
             <TextView
-                android:id="@+id/responseView"
+                android:id="@+id/response_view"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
         </ScrollView>
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/image_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="40dp"
-            android:layout_alignBottom="@+id/p_button"/>
+            android:layout_alignBottom="@+id/previous_button"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp" />
 
         <Button
-            android:id="@+id/p_button"
+            android:id="@+id/previous_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="400dp"
+            android:layout_height="35dp"
             android:layout_gravity="bottom"
-            android:text="previous" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="385dp"
+            android:background="@drawable/my_button"
+            android:text="previous"
+            android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/n_button"
+            android:id="@+id/next_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="400dp"
+            android:layout_height="35dp"
             android:layout_gravity="bottom"
             android:layout_marginLeft="265dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="385dp"
+            android:background="@drawable/my_button"
             android:text="next"
-            android:onClick="nextbutton"/>
-
+            android:textColor="#FFFFFF" />
 
     </RelativeLayout>
 </LinearLayout>

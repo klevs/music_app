@@ -8,7 +8,7 @@ public class Artist {
     private String name;
     private Biography[] biographies;
     private ArtistImage[] images;
-    private Song[]  songs;
+    private Song[] songs;
 
     public String getName() {
         return name;
